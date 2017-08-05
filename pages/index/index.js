@@ -12,6 +12,20 @@ Page({
       url: '../logs/logs'
     })
   },
+  /*
+  bindHello:function() {
+    wx.navigateTo({
+      url: '../logs/logs',
+    })
+  },
+  */
+  bindHello:function() {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+      }
+    })
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this
