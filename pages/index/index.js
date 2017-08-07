@@ -12,16 +12,12 @@ Page({
       url: '../logs/logs'
     })
   },
-<<<<<<< HEAD
   /*
-=======
->>>>>>> da490dce7094bc8d3cfa8637b0623bbae03b4329
   bindHello:function() {
     wx.navigateTo({
       url: '../logs/logs',
     })
   },
-<<<<<<< HEAD
   */
   bindHello:function() {
     wx.scanCode({
@@ -30,8 +26,6 @@ Page({
       }
     })
   },
-=======
->>>>>>> da490dce7094bc8d3cfa8637b0623bbae03b4329
   onLoad: function () {
     console.log('onLoad')
     var that = this
