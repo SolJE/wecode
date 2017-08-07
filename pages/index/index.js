@@ -5,6 +5,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {}
+    result:''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -21,8 +22,12 @@ Page({
   */
   bindHello:function() {
     wx.scanCode({
-      success: (res) => {
-        console.log(res)
+      success: function (res) {
+        that.setData({
+          result: res.result
+        })
+      },
+      fail: function (res) {
       }
     })
   },
