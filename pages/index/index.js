@@ -4,7 +4,7 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
     result:''
   },
   //事件处理函数
@@ -24,7 +24,8 @@ Page({
     wx.scanCode({
       success: function (res) {
         that.setData({
-          result: res.result
+          /*result: res.result*/
+          result: 'res.result'
         })
       },
       fail: function (res) {
